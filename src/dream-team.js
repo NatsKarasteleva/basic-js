@@ -6,5 +6,9 @@ module.exports = function createDreamTeam(members ) {
     }
   }
   arr.sort();
-  return arr.join('');
+  var res = arr.join('')
+  if(res.length == 0){
+    return null;
+  }
+  return res;
 };
